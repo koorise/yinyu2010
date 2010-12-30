@@ -1,0 +1,2124 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.owl-ontologies.com/Ontology1286184178.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:base="http://localhost/ontologies/base.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/Ontology1286184178.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://localhost/ontologies/electrical.owl"/>
+    <owl:imports rdf:resource="http://localhost/ontologies/geometry.owl"/>
+  </owl:Ontology>
+  <base:PhysicalTool rdf:ID="Flachrundzange"/>
+  <base:PhysicalTool rdf:ID="Kombizange"/>
+  <base:PhysicalTool rdf:ID="Ringgabelschlüssel"/>
+  <base:PhysicalComponent rdf:ID="NU_BL_Touchpanel">
+    <base:consistsOf>
+      <base:PhysicalComponent rdf:ID="Profil8_80x40_leicht_0_0_026_36_1380_">
+        <base:isPartOf rdf:resource="#NU_BL_Touchpanel"/>
+      </base:PhysicalComponent>
+    </base:consistsOf>
+    <base:consistsOf>
+      <base:PhysicalComponent rdf:ID="Profil8_80x40_leicht_0_0_026_36_300_">
+        <base:isPartOf rdf:resource="#NU_BL_Touchpanel"/>
+      </base:PhysicalComponent>
+    </base:consistsOf>
+    <base:CableConnectionToExternal>
+      <base:Electrical_Support rdf:ID="Signalsaeule"/>
+    </base:CableConnectionToExternal>
+    <base:CableConnectionToExternal>
+      <base:Electrical_Support rdf:ID="Stromversorgung"/>
+    </base:CableConnectionToExternal>
+    <base:Powercontrol rdf:resource="#Signalsaeule"/>
+    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >-2710.0</base:Coordinate_Y>
+    <base:consistsOf>
+      <base:PhysicalComponent rdf:ID="VN3027-014_Touch-Panel_Gross">
+        <base:isPartOf rdf:resource="#NU_BL_Touchpanel"/>
+      </base:PhysicalComponent>
+    </base:consistsOf>
+    <base:Powercontrol>
+      <base:Electrical_Support rdf:ID="Netzwerk"/>
+    </base:Powercontrol>
+    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >339.9467</base:Coordinate_X>
+    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >739.02</base:Coordinate_X>
+    <base:Powercontrol rdf:resource="#Stromversorgung"/>
+    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >-2670.0</base:Coordinate_Y>
+    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >629.9993</base:Coordinate_Z>
+    <base:isPartOf>
+      <base:PhysicalComponent rdf:ID="Bandlayout_Nuernberg">
+        <base:CableConnectionToExternal>
+          <base:Electrical_Support rdf:ID="Endabschaltung_X-Achse"/>
+        </base:CableConnectionToExternal>
+        <base:Powercontrol>
+          <base:Electrical_Support rdf:ID="Barcodeleser"/>
+        </base:Powercontrol>
+        <base:SchraubenConnectionToExternal>
+          <base:Schrauben_Support rdf:ID="N_7991_M_4_X_16_2_in_NU_FLP_GRUNDGESTELL"/>
+        </base:SchraubenConnectionToExternal>
+        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >3190.19</base:Coordinate_Y>
+        <base:SchraubenConnectionToExternal>
+          <base:Schrauben_Support rdf:ID="N_7991_M_4_X_16_4_in_NU_FLP_GRUNDGESTELL"/>
+        </base:SchraubenConnectionToExternal>
+        <base:SchraubenConnectionToExternal>
+          <base:Schrauben_Support rdf:ID="N_7991_M_4_X_16_1_in_NU_FLP_GRUNDGESTELL"/>
+        </base:SchraubenConnectionToExternal>
+        <base:consistsOf>
+          <base:PhysicalComponent rdf:ID="Siemens-Hutschiene-650">
+            <base:isPartOf rdf:resource="#Bandlayout_Nuernberg"/>
+          </base:PhysicalComponent>
+        </base:consistsOf>
+        <base:Powercontrol>
+          <base:Electrical_Support rdf:ID="Tuerschutzschalter"/>
+        </base:Powercontrol>
+        <base:consistsOf>
+          <base:PhysicalComponent rdf:ID="VN3027-018_AC-Antr-Welle">
+            <base:isPartOf rdf:resource="#Bandlayout_Nuernberg"/>
+          </base:PhysicalComponent>
+        </base:consistsOf>
+        <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+        <base:Powercontrol>
+          <base:Electrical_Support rdf:ID="Station_Abfrage"/>
+        </base:Powercontrol>
+        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >2031.499</base:Coordinate_Z>
+        <base:Powercontrol>
+          <base:Electrical_Support rdf:ID="Endabschaltung_Y-Achse"/>
+        </base:Powercontrol>
+        <base:SchraubenConnectionToExternal>
+          <base:Schrauben_Support rdf:ID="N_7991_M_4_X_16_6_in_NU_FLP_GRUNDGESTELL"/>
+        </base:SchraubenConnectionToExternal>
+        <base:consistsOf>
+          <base:PhysicalComponent rdf:ID="HAN16A_Dose_Stecker">
+            <base:isPartOf rdf:resource="#Bandlayout_Nuernberg"/>
+          </base:PhysicalComponent>
+        </base:consistsOf>
+        <base:CableConnectionToExternal>
+          <base:Electrical_Support rdf:ID="Not-Aus"/>
+        </base:CableConnectionToExternal>
+        <base:Powercontrol>
+          <base:Electrical_Support rdf:ID="TM17"/>
+        </base:Powercontrol>
+        <base:SchraubenConnectionToExternal>
+          <base:Schrauben_Support rdf:ID="N_7991_M_4_X_16_7_in_NU_FLP_GRUNDGESTELL"/>
+        </base:SchraubenConnectionToExternal>
+        <base:Powercontrol>
+          <base:Electrical_Support rdf:ID="Sinamis_Double_Moto_Module_Z-Achse"/>
+        </base:Powercontrol>
+        <base:Powercontrol>
+          <base:Electrical_Support rdf:ID="Stationenschalter"/>
+        </base:Powercontrol>
+        <base:SchraubenConnectionToExternal>
+          <base:Schrauben_Support rdf:ID="N_7991_M_4_X_16_8_in_NU_FLP_GRUNDGESTELL"/>
+        </base:SchraubenConnectionToExternal>
+        <base:CableConnectionToExternal>
+          <base:Electrical_Support rdf:ID="Sinamics_Smart_Line_Module"/>
+        </base:CableConnectionToExternal>
+        <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+        <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+        <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+        <base:Powercontrol>
+          <base:Electrical_Support rdf:ID="AS-i-Netzteil"/>
+        </base:Powercontrol>
+        <base:consistsOf>
+          <base:PhysicalComponent rdf:ID="VN3027-018-li_AC-Antr-kompl">
+            <base:isPartOf rdf:resource="#Bandlayout_Nuernberg"/>
+          </base:PhysicalComponent>
+        </base:consistsOf>
+        <base:CableConnectionToExternal>
+          <base:Electrical_Support rdf:ID="SMC_30"/>
+        </base:CableConnectionToExternal>
+        <base:CableConnectionToExternal>
+          <base:Electrical_Support rdf:ID="Lichtvorhang"/>
+        </base:CableConnectionToExternal>
+        <base:Powercontrol rdf:resource="#SMC_30"/>
+        <base:CableConnectionToExternal rdf:resource="#AS-i-Netzteil"/>
+        <base:consistsOf>
+          <base:PhysicalComponent rdf:ID="NU_BL_Transportsystem">
+            <base:Powercontrol>
+              <base:Electrical_Support rdf:ID="USV_Modul_Akkumodul"/>
+            </base:Powercontrol>
+            <base:Powercontrol>
+              <base:Electrical_Support rdf:ID="Greifer_Schwenkbacken"/>
+            </base:Powercontrol>
+            <base:CableConnectionToExternal rdf:resource="#Lichtvorhang"/>
+            <base:Powercontrol rdf:resource="#Endabschaltung_Y-Achse"/>
+            <base:CableConnectionToExternal>
+              <base:Electrical_Support rdf:ID="Greifer_Auf_Zu"/>
+            </base:CableConnectionToExternal>
+            <base:CableConnectionToExternal>
+              <base:Electrical_Support rdf:ID="Simotion_Base_Control"/>
+            </base:CableConnectionToExternal>
+            <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+            <base:Powercontrol rdf:resource="#SMC_30"/>
+            <base:CableConnectionToExternal rdf:resource="#Endabschaltung_X-Achse"/>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="VN3027-011_StopperVereinzeler">
+                <base:isPartOf rdf:resource="#NU_BL_Transportsystem"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:Powercontrol rdf:resource="#Netzwerk"/>
+            <base:Powercontrol rdf:resource="#Sinamics_Smart_Line_Module"/>
+            <base:Powercontrol rdf:resource="#Simotion_Base_Control"/>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="VN3027-011_Scanner-SonarLS">
+                <base:isPartOf rdf:resource="#NU_BL_Transportsystem"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:CableConnectionToExternal rdf:resource="#AS-i-Netzteil"/>
+            <base:isPartOf rdf:resource="#Bandlayout_Nuernberg"/>
+            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >627.1021</base:Coordinate_X>
+            <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+            <base:Powercontrol rdf:resource="#AS-i-Netzteil"/>
+            <base:Powercontrol rdf:resource="#Stationenschalter"/>
+            <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+            <base:Powercontrol rdf:resource="#Signalsaeule"/>
+            <base:Powercontrol>
+              <base:Electrical_Support rdf:ID="Endabschaltung_Z-Achse"/>
+            </base:Powercontrol>
+            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >670.09</base:Coordinate_Z>
+            <base:CableConnectionToExternal rdf:resource="#USV_Modul_Akkumodul"/>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="VN3027-019_Leitplankenhalter">
+                <base:isPartOf rdf:resource="#NU_BL_Transportsystem"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:CableConnectionToExternal rdf:resource="#Sinamics_Smart_Line_Module"/>
+            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >-675.591</base:Coordinate_X>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="_Bandstrecke">
+                <base:isPartOf rdf:resource="#NU_BL_Transportsystem"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >1050.396</base:Coordinate_Z>
+            <base:Powercontrol rdf:resource="#Barcodeleser"/>
+            <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Y-Achse"/>
+            <base:Powercontrol rdf:resource="#Lichtvorhang"/>
+            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >-3081.5</base:Coordinate_Y>
+            <base:Powercontrol rdf:resource="#Not-Aus"/>
+            <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+            <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+            <base:Powercontrol rdf:resource="#Stromversorgung"/>
+            <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+            <base:Powercontrol>
+              <base:Electrical_Support rdf:ID="Reserve"/>
+            </base:Powercontrol>
+            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >3190.19</base:Coordinate_Y>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="VN3027-113_Einschleussen">
+                <base:isPartOf rdf:resource="#NU_BL_Transportsystem"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Z-Achse"/>
+            <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+            <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+            <base:CableConnectionToExternal rdf:resource="#Greifer_Schwenkbacken"/>
+            <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+          </base:PhysicalComponent>
+        </base:consistsOf>
+        <base:consistsOf rdf:resource="#NU_BL_Touchpanel"/>
+        <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+        <base:Powercontrol rdf:resource="#Reserve"/>
+        <base:consistsOf>
+          <base:PhysicalComponent rdf:ID="Siemens-Hutschiene-330">
+            <base:isPartOf rdf:resource="#Bandlayout_Nuernberg"/>
+          </base:PhysicalComponent>
+        </base:consistsOf>
+        <base:CableConnectionToExternal rdf:resource="#Reserve"/>
+        <base:Powercontrol rdf:resource="#USV_Modul_Akkumodul"/>
+        <base:Powercontrol rdf:resource="#Lichtvorhang"/>
+        <base:Powercontrol rdf:resource="#Not-Aus"/>
+        <base:consistsOf>
+          <base:PhysicalComponent rdf:ID="VN3027-145_HartingAnschluss">
+            <base:isPartOf rdf:resource="#Bandlayout_Nuernberg"/>
+          </base:PhysicalComponent>
+        </base:consistsOf>
+        <base:consistsOf>
+          <base:PhysicalComponent rdf:ID="NU_BL_Grundrahmen">
+            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >3041.499</base:Coordinate_Y>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="_Grundgestell_3000x1000_rechts">
+                <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-0.00794</base:Coordinate_Z>
+                <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+                <base:CableConnectionToExternal rdf:resource="#Lichtvorhang"/>
+                <base:CableConnectionToExternal rdf:resource="#Simotion_Base_Control"/>
+                <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-2710.0</base:Coordinate_Y>
+                <base:Powercontrol rdf:resource="#Simotion_Base_Control"/>
+                <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                <base:Powercontrol rdf:resource="#Sinamics_Smart_Line_Module"/>
+                <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >3401.499</base:Coordinate_Y>
+                <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                <base:Powercontrol rdf:resource="#Barcodeleser"/>
+                <base:Powercontrol rdf:resource="#Netzwerk"/>
+                <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                <base:CableConnectionToExternal rdf:resource="#Sinamics_Smart_Line_Module"/>
+                <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >789.9999</base:Coordinate_Z>
+                <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                <base:Powercontrol rdf:resource="#AS-i-Netzteil"/>
+                <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+                <base:CableConnectionToExternal rdf:resource="#AS-i-Netzteil"/>
+                <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-486.142</base:Coordinate_X>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="Stellfuss_D40_M16_80_rechts">
+                    <base:isPartOf rdf:resource="#_Grundgestell_3000x1000_rechts"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:Powercontrol rdf:resource="#Lichtvorhang"/>
+                <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >494.1569</base:Coordinate_X>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="Fussplatte_40_80_M16_rechts">
+                    <base:isPartOf rdf:resource="#_Grundgestell_3000x1000_rechts"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:isPartOf rdf:resource="#NU_BL_Grundrahmen"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >494.1569</base:Coordinate_X>
+            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >-3050.0</base:Coordinate_Y>
+            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >-0.00794</base:Coordinate_Z>
+            <base:isPartOf rdf:resource="#Bandlayout_Nuernberg"/>
+            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >789.9999</base:Coordinate_Z>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="EB-1577-500_Gehaeuse_400x300x155_Sonder">
+                <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                <base:isPartOf rdf:resource="#NU_BL_Grundrahmen"/>
+                <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >1763.599</base:Coordinate_Y>
+                <base:CableConnectionToExternal rdf:resource="#Tuerschutzschalter"/>
+                <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >703.5959</base:Coordinate_Z>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="VN3027-625_EB-Schutzscheibe">
+                    <base:isPartOf rdf:resource="#EB-1577-500_Gehaeuse_400x300x155_Sonder"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-156.845</base:Coordinate_X>
+                <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                <base:Powercontrol rdf:resource="#TM17"/>
+                <base:Powercontrol rdf:resource="#USV_Modul_Akkumodul"/>
+                <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >406.9959</base:Coordinate_Z>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="EB-1577-500_Deckel_400x300_Sonder">
+                    <base:isPartOf rdf:resource="#EB-1577-500_Gehaeuse_400x300x155_Sonder"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:Powercontrol rdf:resource="#AS-i-Netzteil"/>
+                <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                <base:CableConnectionToExternal rdf:resource="#USV_Modul_Akkumodul"/>
+                <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-3.2482</base:Coordinate_X>
+                <base:CableConnectionToExternal rdf:resource="#AS-i-Netzteil"/>
+                <base:CableConnectionToExternal rdf:resource="#TM17"/>
+                <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                <base:Powercontrol rdf:resource="#Tuerschutzschalter"/>
+                <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+                <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >1366.999</base:Coordinate_Y>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="L-AL__160">
+                <base:isPartOf rdf:resource="#NU_BL_Grundrahmen"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >-486.142</base:Coordinate_X>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="_Grundgestell_3000x1000">
+                <base:Powercontrol rdf:resource="#Simotion_Base_Control"/>
+                <base:isPartOf rdf:resource="#NU_BL_Grundrahmen"/>
+                <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-486.142</base:Coordinate_X>
+                <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="Stellfuss_D40_M16_80">
+                    <base:isPartOf rdf:resource="#_Grundgestell_3000x1000"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="Fussplatte_40_80_M16">
+                    <base:isPartOf rdf:resource="#_Grundgestell_3000x1000"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >789.9999</base:Coordinate_Z>
+                <base:Powercontrol rdf:resource="#Sinamics_Smart_Line_Module"/>
+                <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >2709.999</base:Coordinate_Y>
+                <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+                <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-3050.0</base:Coordinate_Y>
+                <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                <base:CableConnectionToExternal rdf:resource="#Lichtvorhang"/>
+                <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >494.1569</base:Coordinate_X>
+                <base:Powercontrol rdf:resource="#Lichtvorhang"/>
+                <base:CableConnectionToExternal rdf:resource="#AS-i-Netzteil"/>
+                <base:Powercontrol rdf:resource="#Netzwerk"/>
+                <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+                <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                <base:Powercontrol rdf:resource="#Barcodeleser"/>
+                <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-0.00794</base:Coordinate_Z>
+                <base:Powercontrol rdf:resource="#AS-i-Netzteil"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+          </base:PhysicalComponent>
+        </base:consistsOf>
+        <base:SchraubenConnectionToExternal>
+          <base:Schrauben_Support rdf:ID="N_7991_M_4_X_16_5_in_NU_FLP_GRUNDGESTELL"/>
+        </base:SchraubenConnectionToExternal>
+        <base:Powercontrol rdf:resource="#Simotion_Base_Control"/>
+        <base:CableConnectionToExternal rdf:resource="#Greifer_Schwenkbacken"/>
+        <base:Usetools>
+          <base:PhysicalTool rdf:ID="Stiftschlüssel"/>
+        </base:Usetools>
+        <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+        <base:CableConnectionToExternal rdf:resource="#Greifer_Auf_Zu"/>
+        <base:Powercontrol rdf:resource="#Sinamics_Smart_Line_Module"/>
+        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >-0.00794</base:Coordinate_Z>
+        <base:CableConnectionToExternal rdf:resource="#USV_Modul_Akkumodul"/>
+        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >-660.645</base:Coordinate_X>
+        <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+        <base:CableConnectionToExternal rdf:resource="#Tuerschutzschalter"/>
+        <base:Powercontrol>
+          <base:Electrical_Support rdf:ID="Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+        </base:Powercontrol>
+        <base:SchraubenConnectionToExternal>
+          <base:Schrauben_Support rdf:ID="N_7991_M_4_X_16_3_in_NU_FLP_GRUNDGESTELL"/>
+        </base:SchraubenConnectionToExternal>
+        <base:consistsOf>
+          <base:PhysicalComponent rdf:ID="NU_BL_Tischfixierung">
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="Prueftisch_Leer_Fixierung">
+                <base:isPartOf rdf:resource="#NU_BL_Tischfixierung"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="Pruefstation1_Fixierung">
+                <base:isPartOf rdf:resource="#NU_BL_Tischfixierung"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:Powercontrol rdf:resource="#Netzwerk"/>
+            <base:Powercontrol rdf:resource="#Signalsaeule"/>
+            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.0</base:Coordinate_Y>
+            <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.0</base:Coordinate_X>
+            <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.0</base:Coordinate_Z>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="Pruefstation2_Fixierung">
+                <base:isPartOf rdf:resource="#NU_BL_Tischfixierung"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:isPartOf rdf:resource="#Bandlayout_Nuernberg"/>
+          </base:PhysicalComponent>
+        </base:consistsOf>
+        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Z-Achse"/>
+        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Y-Achse"/>
+        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >739.02</base:Coordinate_X>
+        <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+        <base:Powercontrol rdf:resource="#Signalsaeule"/>
+        <base:Usetools>
+          <base:PhysicalTool rdf:ID="Schraubenschlüssel"/>
+        </base:Usetools>
+        <base:Powercontrol rdf:resource="#Endabschaltung_Z-Achse"/>
+        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >-3081.5</base:Coordinate_Y>
+        <base:Usetools>
+          <base:PhysicalTool rdf:ID="Schraubendreher"/>
+        </base:Usetools>
+        <base:CableConnectionToExternal rdf:resource="#TM17"/>
+        <base:isPartOf>
+          <base:PhysicalComponent rdf:ID="SmartAutomation">
+            <base:consistsOf rdf:resource="#Bandlayout_Nuernberg"/>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="Verdeckelungsstation_ZU_Nuernberg">
+                <base:isPartOf rdf:resource="#SmartAutomation"/>
+                <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-3.0</base:Coordinate_Z>
+                <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-2284.1934</base:Coordinate_Y>
+                <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+                <base:Powercontrol rdf:resource="#Endabschaltung_Z-Achse"/>
+                <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >1379.612</base:Coordinate_Z>
+                <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Z-Achse"/>
+                <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                <base:CableConnectionToExternal rdf:resource="#Sinamics_Smart_Line_Module"/>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="NU_VDZ_Grundgestell">
+                    <base:Powercontrol rdf:resource="#Sinamics_Smart_Line_Module"/>
+                    <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                    <base:Powercontrol rdf:resource="#Simotion_Base_Control"/>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="Grundgestell_340x700_001">
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1269.99</base:Coordinate_X>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-3.0</base:Coordinate_Z>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1898.99</base:Coordinate_Y>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Proilplatte_komplett">
+                            <base:isPartOf rdf:resource="#Grundgestell_340x700_001"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-563.99</base:Coordinate_X>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-2248.99</base:Coordinate_Y>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Gelenkfuss_1-80">
+                            <base:isPartOf rdf:resource="#Grundgestell_340x700_001"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Schnaithm-Profil">
+                            <base:isPartOf rdf:resource="#Grundgestell_340x700_001"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >788.499</base:Coordinate_Z>
+                        <base:isPartOf rdf:resource="#NU_VDZ_Grundgestell"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-2249.99</base:Coordinate_Y>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >788.499</base:Coordinate_Z>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1898.99</base:Coordinate_Y>
+                    <base:CableConnectionToExternal rdf:resource="#Sinamics_Smart_Line_Module"/>
+                    <base:CableConnectionToExternal rdf:resource="#Simotion_Base_Control"/>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-3.0</base:Coordinate_Z>
+                    <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                    <base:isPartOf rdf:resource="#Verdeckelungsstation_ZU_Nuernberg"/>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-563.99</base:Coordinate_X>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1269.99</base:Coordinate_X>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="NU_VDZ_Greifereinheit">
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="SLT_16_20_P_A">
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="SLT_16_20_P_A002">
+                            <base:isPartOf rdf:resource="#SLT_16_20_P_A"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1269.1</base:Coordinate_Z>
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greifereinheit"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-384.169</base:Coordinate_X>
+                        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="SLT_16_20_P_A001">
+                            <base:isPartOf rdf:resource="#SLT_16_20_P_A"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1183.6</base:Coordinate_Z>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-2005.58</base:Coordinate_Y>
+                        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1965.58</base:Coordinate_Y>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-442.169</base:Coordinate_X>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:isPartOf rdf:resource="#Verdeckelungsstation_ZU_Nuernberg"/>
+                    <base:Usetools rdf:resource="#Schraubendreher"/>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="HAPS_12">
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greifereinheit"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >1358.244</base:Coordinate_Z>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="NU_VDZ_Greifer">
+                        <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                        <base:Powercontrol rdf:resource="#Endabschaltung_Z-Achse"/>
+                        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-2010.58</base:Coordinate_Y>
+                        <base:Powercontrol rdf:resource="#Endabschaltung_Y-Achse"/>
+                        <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1000.1</base:Coordinate_Z>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1175.6</base:Coordinate_Z>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="HAPG_SD">
+                            <base:isPartOf rdf:resource="#NU_VDZ_Greifer"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+                        <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Z-Achse"/>
+                        <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+                        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-506.969</base:Coordinate_X>
+                        <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="DRQD_PPVJ_FW1">
+                            <base:isPartOf rdf:resource="#NU_VDZ_Greifer"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="SMT-LED">
+                            <base:isPartOf rdf:resource="#NU_VDZ_Greifer"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Y-Achse"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-300.869</base:Coordinate_X>
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greifereinheit"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1945.98</base:Coordinate_Y>
+                        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_X-Achse"/>
+                        <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1935.88</base:Coordinate_Y>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-601.401</base:Coordinate_X>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="Glieder_Anschlussgleich">
+                        <base:CableConnectionToExternal rdf:resource="#Simotion_Base_Control"/>
+                        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-2049.58</base:Coordinate_Y>
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greifereinheit"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-601.401</base:Coordinate_X>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1258.6</base:Coordinate_Z>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-252.433</base:Coordinate_X>
+                        <base:Powercontrol rdf:resource="#Simotion_Base_Control"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-2085.58</base:Coordinate_Y>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="R038_Glied">
+                            <base:isPartOf rdf:resource="#Glieder_Anschlussgleich"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="R038_Endstueck">
+                            <base:isPartOf rdf:resource="#Glieder_Anschlussgleich"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1357.253</base:Coordinate_Z>
+                        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="Kabelschleppaufnahme">
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greifereinheit"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="Adapter_SLG-Profil">
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greifereinheit"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:SchraubenConnectionToExternal>
+                      <base:Schrauben_Support rdf:ID="Schrauben_auf_B15_2_R038_Endstueck_zapfen_1_in_8_16_Glieder_Anschlussgleich_1"/>
+                    </base:SchraubenConnectionToExternal>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-2085.58</base:Coordinate_Y>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="SLG_YSR_A_1">
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greifereinheit"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-2038.98</base:Coordinate_Y>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1255.6</base:Coordinate_Z>
+                        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1194.1</base:Coordinate_Z>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-2015.08</base:Coordinate_Y>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-228.388</base:Coordinate_X>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-599.338</base:Coordinate_X>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="SLG_YSR_A_001">
+                            <base:isPartOf rdf:resource="#SLG_YSR_A_1"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="SLG_YSR_A_002">
+                            <base:isPartOf rdf:resource="#SLG_YSR_A_1"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="Sensor_siemens">
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greifereinheit"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >999.4</base:Coordinate_Z>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-228.338</base:Coordinate_X>
+                    <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                    <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:Powercontrol rdf:resource="#Simotion_Base_Control"/>
+                <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="Ventilinsel_5er_L_M_Einzelanschluss">
+                    <base:SchraubenConnectionToExternal>
+                      <base:Schrauben_Support rdf:ID="ISO_1207-M4_10"/>
+                    </base:SchraubenConnectionToExternal>
+                    <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >1231.4514</base:Coordinate_Z>
+                    <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-2088.15</base:Coordinate_Y>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >1156.0054</base:Coordinate_Z>
+                    <base:SchraubenConnectionToExternal>
+                      <base:Schrauben_Support rdf:ID="ISO_1207-M4_10rechts"/>
+                    </base:SchraubenConnectionToExternal>
+                    <base:isPartOf rdf:resource="#Verdeckelungsstation_ZU_Nuernberg"/>
+                    <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="L_STECKVERSCHR">
+                        <base:isPartOf rdf:resource="#Ventilinsel_5er_L_M_Einzelanschluss"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-2178.65</base:Coordinate_Y>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-928.295</base:Coordinate_X>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-824.414</base:Coordinate_X>
+                    <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="KMYZ-3-24_LED">
+                        <base:isPartOf rdf:resource="#Ventilinsel_5er_L_M_Einzelanschluss"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:Powercontrol rdf:resource="#Endabschaltung_Y-Achse"/>
+                <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+                <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-1880.9934</base:Coordinate_Y>
+                <base:Powercontrol rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+                <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="NU_VDZ_Geraetetafel">
+                    <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-2241.495</base:Coordinate_Y>
+                    <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >168.0</base:Coordinate_Z>
+                    <base:Powercontrol rdf:resource="#Not-Aus"/>
+                    <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                    <base:Powercontrol rdf:resource="#Netzwerk"/>
+                    <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                    <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                    <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="Montageboard">
+                        <base:isPartOf rdf:resource="#NU_VDZ_Geraetetafel"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >758.0</base:Coordinate_Z>
+                    <base:CableConnectionToExternal rdf:resource="#USV_Modul_Akkumodul"/>
+                    <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1911.495</base:Coordinate_Y>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-969.549</base:Coordinate_X>
+                    <base:Powercontrol rdf:resource="#USV_Modul_Akkumodul"/>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1066.545</base:Coordinate_X>
+                    <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                    <base:CableConnectionToExternal rdf:resource="#TM17"/>
+                    <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                    <base:CableConnectionToExternal rdf:resource="#Not-Aus"/>
+                    <base:isPartOf rdf:resource="#Verdeckelungsstation_ZU_Nuernberg"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:Powercontrol rdf:resource="#Sinamics_Smart_Line_Module"/>
+                <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                <base:Powercontrol rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+                <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+                <base:Usetools rdf:resource="#Schraubendreher"/>
+                <base:SchraubenConnectionToExternal>
+                  <base:Schrauben_Support rdf:ID="Schrauben_auf_529352_HPV_14_40_A_001_1_in_529352_HPV_14_40_A_1"/>
+                </base:SchraubenConnectionToExternal>
+                <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-223.957</base:Coordinate_X>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="NU_VDZ_Greiffgestell">
+                    <base:SchraubenConnectionToExternal>
+                      <base:Schrauben_Support rdf:ID="Schrauben_auf_175951_HMBF_DB_2_in_NU_VDZ_GREIFFGESTELL_1"/>
+                    </base:SchraubenConnectionToExternal>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1227.95</base:Coordinate_X>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="Abdeckkappe">
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greiffgestell"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-2247.0</base:Coordinate_Y>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="Winkelelement">
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greiffgestell"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:SchraubenConnectionToExternal rdf:resource="#ISO_1207-M4_10rechts"/>
+                    <base:isPartOf rdf:resource="#Verdeckelungsstation_ZU_Nuernberg"/>
+                    <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                    <base:Usetools rdf:resource="#Schraubendreher"/>
+                    <base:SchraubenConnectionToExternal>
+                      <base:Schrauben_Support rdf:ID="Schrauben_auf_175951_HMBF_DB_5_in_NU_VDZ_GREIFFGESTELL_1"/>
+                    </base:SchraubenConnectionToExternal>
+                    <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1888.0</base:Coordinate_Y>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-233.957</base:Coordinate_X>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >789.5999</base:Coordinate_Z>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >1375.524</base:Coordinate_Z>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="VN3027-421_Steuerung">
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Siemens-Hutschiene-350">
+                            <base:isPartOf rdf:resource="#VN3027-421_Steuerung"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-2247.0</base:Coordinate_Y>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-999.354</base:Coordinate_X>
+                        <base:isPartOf rdf:resource="#NU_VDZ_Greiffgestell"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1219.665</base:Coordinate_Z>
+                        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1375.524</base:Coordinate_Z>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1888.0</base:Coordinate_Y>
+                        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1227.95</base:Coordinate_X>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Klemme">
+                            <base:isPartOf rdf:resource="#VN3027-421_Steuerung"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Endklemme">
+                            <base:isPartOf rdf:resource="#VN3027-421_Steuerung"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                    <base:SchraubenConnectionToExternal rdf:resource="#ISO_1207-M4_10"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Y-Achse"/>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="NU_VDZ_Touchpanel">
+                    <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                    <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >758.0145</base:Coordinate_Z>
+                    <base:isPartOf rdf:resource="#Verdeckelungsstation_ZU_Nuernberg"/>
+                    <base:Usetools>
+                      <base:PhysicalTool rdf:ID="Kreuzschlitzschraubendreher"/>
+                    </base:Usetools>
+                    <base:SchraubenConnectionToExternal>
+                      <base:Schrauben_Support rdf:ID="Schrauben_auf_Gelenk-Ipm-ZG-08-40_40-GDZN_2_in_NU_VDZ_Touchpanel"/>
+                    </base:SchraubenConnectionToExternal>
+                    <base:SchraubenConnectionToExternal>
+                      <base:Schrauben_Support rdf:ID="Schrauben_auf_Gelenk-Ipm-ZG-08-40_40-GDZN_3_in_NU_VDZ_Touchpanel"/>
+                    </base:SchraubenConnectionToExternal>
+                    <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >1054.187</base:Coordinate_Z>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-2284.1934</base:Coordinate_Y>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1880.9934</base:Coordinate_Y>
+                    <base:Powercontrol rdf:resource="#Netzwerk"/>
+                    <base:Usetools>
+                      <base:PhysicalTool rdf:ID="Schlitzschraubendreher"/>
+                    </base:Usetools>
+                    <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1096.72</base:Coordinate_X>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="Touch-Panel_Klein">
+                        <base:isPartOf rdf:resource="#NU_VDZ_Touchpanel"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Eckverbinder_V2">
+                            <base:isPartOf rdf:resource="#Touch-Panel_Klein"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Nacharb">
+                            <base:isPartOf rdf:resource="#Touch-Panel_Klein"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1054.187</base:Coordinate_Z>
+                        <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1880.9934</base:Coordinate_Y>
+                        <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-2284.1934</base:Coordinate_Y>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1096.72</base:Coordinate_X>
+                        <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                        <base:Powercontrol rdf:resource="#Netzwerk"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >758.0145</base:Coordinate_Z>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Alu-Blech_TP-Vorne-Klein">
+                            <base:isPartOf rdf:resource="#Touch-Panel_Klein"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Hauptschalter_kein">
+                            <base:isPartOf rdf:resource="#Touch-Panel_Klein"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1387.485</base:Coordinate_X>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1387.485</base:Coordinate_X>
+                    <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:Powercontrol rdf:resource="#USV_Modul_Akkumodul"/>
+                <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-1383.0</base:Coordinate_X>
+                <base:CableConnectionToExternal rdf:resource="#Endabschaltung_X-Achse"/>
+                <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+                <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                <base:CableConnectionToExternal rdf:resource="#USV_Modul_Akkumodul"/>
+                <base:Powercontrol rdf:resource="#Netzwerk"/>
+                <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                <base:CableConnectionToExternal rdf:resource="#Simotion_Base_Control"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+            <base:consistsOf>
+              <base:PhysicalComponent rdf:ID="Flaschenpicker_komp_Nuernberg">
+                <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >1291.0</base:Coordinate_X>
+                <base:CableConnectionToExternal rdf:resource="#USV_Modul_Akkumodul"/>
+                <base:Powercontrol rdf:resource="#Netzwerk"/>
+                <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+                <base:Powercontrol rdf:resource="#Endabschaltung_Y-Achse"/>
+                <base:isPartOf rdf:resource="#SmartAutomation"/>
+                <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-0.29999</base:Coordinate_Z>
+                <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+                <base:SchraubenConnectionToExternal>
+                  <base:Schrauben_Support rdf:ID="Einstellfu_S____S_x40_Gewinde_M16x81_Standard"/>
+                </base:SchraubenConnectionToExternal>
+                <base:Powercontrol rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+                <base:Powercontrol rdf:resource="#AS-i-Netzteil"/>
+                <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-1972.0</base:Coordinate_Y>
+                <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Y-Achse"/>
+                <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Z-Achse"/>
+                <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_4_in_NU_FLP_GRUNDGESTELL"/>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="Schaltschrank_Nuernberg">
+                    <base:CableConnectionToExternal rdf:resource="#Reserve"/>
+                    <base:CableConnectionToExternal rdf:resource="#TM17"/>
+                    <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+                    <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="NU_SCH_Geraetetafel">
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="VN3027-602_Montageplatte">
+                            <base:isPartOf rdf:resource="#NU_SCH_Geraetetafel"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:CableConnectionToExternal rdf:resource="#Tuerschutzschalter"/>
+                        <base:CableConnectionToExternal rdf:resource="#TM17"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >885.5</base:Coordinate_X>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >836.5</base:Coordinate_Y>
+                        <base:Powercontrol rdf:resource="#TM17"/>
+                        <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+                        <base:Powercontrol rdf:resource="#Netzwerk"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1983.0</base:Coordinate_Y>
+                        <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                        <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                        <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >104.5</base:Coordinate_Z>
+                        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                        <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >881.5</base:Coordinate_X>
+                        <base:isPartOf rdf:resource="#Schaltschrank_Nuernberg"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >895.5</base:Coordinate_Z>
+                        <base:Powercontrol rdf:resource="#Tuerschutzschalter"/>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >2426.5774</base:Coordinate_Y>
+                    <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >806.5</base:Coordinate_Y>
+                    <base:Powercontrol rdf:resource="#Tuerschutzschalter"/>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="NU_SCH_Bedinpanel">
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Panel-Rahmen_YxX">
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Touch_Panel_PC477-15Zoll">
+                                <base:isPartOf rdf:resource="#Panel-Rahmen_YxX"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Powercontrol rdf:resource="#Netzwerk"/>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1065.1985</base:Coordinate_X>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Eckverbinder_120">
+                                <base:isPartOf rdf:resource="#Panel-Rahmen_YxX"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1860.5</base:Coordinate_Z>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1299.88</base:Coordinate_X>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >2426.5774</base:Coordinate_Y>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Schalter-Leuchte_O">
+                                <base:isPartOf rdf:resource="#Panel-Rahmen_YxX"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                            <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                            <base:isPartOf rdf:resource="#NU_SCH_Bedinpanel"/>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1456.5</base:Coordinate_Z>
+                            <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                            <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Schalter-Leuchte_I">
+                                <base:isPartOf rdf:resource="#Panel-Rahmen_YxX"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1930.569</base:Coordinate_Y>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Standfuss_GT48">
+                            <base:isPartOf rdf:resource="#NU_SCH_Bedinpanel"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1299.88</base:Coordinate_X>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1860.5</base:Coordinate_Z>
+                        <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Adapterplatte">
+                            <base:isPartOf rdf:resource="#NU_SCH_Bedinpanel"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1056.0</base:Coordinate_X>
+                        <base:isPartOf rdf:resource="#Schaltschrank_Nuernberg"/>
+                        <base:Powercontrol rdf:resource="#Netzwerk"/>
+                        <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >2426.5774</base:Coordinate_Y>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1930.569</base:Coordinate_Y>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >835.0</base:Coordinate_Z>
+                        <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Flaschkupplung">
+                            <base:isPartOf rdf:resource="#NU_SCH_Bedinpanel"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                    <base:CableConnectionToExternal rdf:resource="#Tuerschutzschalter"/>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >1291.0</base:Coordinate_X>
+                    <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                    <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >0.0</base:Coordinate_Z>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >1860.5</base:Coordinate_Z>
+                    <base:Powercontrol rdf:resource="#TM17"/>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >827.5</base:Coordinate_X>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="NU_SCH_Gehaeuse_kompl">
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >2025.5</base:Coordinate_Y>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="VN3027-601_Schaltschranktuere">
+                            <base:Powercontrol rdf:resource="#Tuerschutzschalter"/>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1260.0</base:Coordinate_X>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="VN3027-601_Schaltschranktuere49819">
+                                <base:isPartOf rdf:resource="#VN3027-601_Schaltschranktuere"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1245.0</base:Coordinate_X>
+                            <base:CableConnectionToExternal rdf:resource="#Tuerschutzschalter"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="VN3027-624_Schaltschranktuere">
+                                <base:isPartOf rdf:resource="#VN3027-601_Schaltschranktuere"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1415.0</base:Coordinate_Y>
+                            <base:isPartOf rdf:resource="#NU_SCH_Gehaeuse_kompl"/>
+                            <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >20.5</base:Coordinate_Z>
+                            <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >913.0</base:Coordinate_Z>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >822.5</base:Coordinate_Y>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >806.5</base:Coordinate_Y>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1291.0</base:Coordinate_X>
+                        <base:isPartOf rdf:resource="#Schaltschrank_Nuernberg"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >909.5</base:Coordinate_Z>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Hauptschalter">
+                            <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                            <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                            <base:CableConnectionToExternal rdf:resource="#Tuerschutzschalter"/>
+                            <base:isPartOf rdf:resource="#NU_SCH_Gehaeuse_kompl"/>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1294.0</base:Coordinate_X>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >920.0</base:Coordinate_Y>
+                            <base:Powercontrol rdf:resource="#AS-i-Netzteil"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Hauptschalter_Sockel">
+                                <base:isPartOf rdf:resource="#Hauptschalter"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >627.0</base:Coordinate_Z>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >711.5</base:Coordinate_Z>
+                            <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Beschriftitungsschild">
+                                <base:isPartOf rdf:resource="#Hauptschalter"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Hauptshalter_Drehknopf">
+                                <base:isPartOf rdf:resource="#Hauptschalter"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                            <base:Powercontrol rdf:resource="#Tuerschutzschalter"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Beschriftungstraeger">
+                                <base:isPartOf rdf:resource="#Hauptschalter"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >855.0</base:Coordinate_Y>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1260.0</base:Coordinate_X>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >0.0</base:Coordinate_Z>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="SK3322-107_Luefter">
+                            <base:isPartOf rdf:resource="#NU_SCH_Gehaeuse_kompl"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="VN3027-600_Schaltschrankgehaeuse">
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="VN3027-603_Kabelwinkel-unten">
+                                <base:isPartOf rdf:resource="#VN3027-600_Schaltschrankgehaeuse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >827.5</base:Coordinate_X>
+                            <base:CableConnectionToExternal rdf:resource="#Tuerschutzschalter"/>
+                            <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1294.0</base:Coordinate_X>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Flachstahl_355">
+                                <base:isPartOf rdf:resource="#VN3027-600_Schaltschrankgehaeuse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >2025.5</base:Coordinate_Y>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >909.5</base:Coordinate_Z>
+                            <base:isPartOf rdf:resource="#NU_SCH_Gehaeuse_kompl"/>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >806.5</base:Coordinate_Y>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Flachstahl_1194">
+                                <base:isPartOf rdf:resource="#VN3027-600_Schaltschrankgehaeuse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >0.0</base:Coordinate_Z>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="VN3027-604_Kabelwinkel-oben">
+                                <base:isPartOf rdf:resource="#VN3027-600_Schaltschrankgehaeuse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="VN3027-600_Schaltschrankgehaeuse35142">
+                                <base:isPartOf rdf:resource="#VN3027-600_Schaltschrankgehaeuse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                            <base:Powercontrol rdf:resource="#Tuerschutzschalter"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Schalter-I-O">
+                            <base:isPartOf rdf:resource="#NU_SCH_Gehaeuse_kompl"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="SK3322-107_Luefter_rechts">
+                            <base:isPartOf rdf:resource="#NU_SCH_Gehaeuse_kompl"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >827.5</base:Coordinate_X>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="VN3027-605_Schaltschranktuere_rechts">
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1245.0</base:Coordinate_X>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1410.5</base:Coordinate_Y>
+                            <base:isPartOf rdf:resource="#NU_SCH_Gehaeuse_kompl"/>
+                            <base:Powercontrol rdf:resource="#Tuerschutzschalter"/>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >2011.5</base:Coordinate_Y>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >913.0</base:Coordinate_Z>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="VN3027-624_Schaltschranktuere_techts">
+                                <base:isPartOf rdf:resource="#VN3027-605_Schaltschranktuere_rechts"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1260.0</base:Coordinate_X>
+                            <base:CableConnectionToExternal rdf:resource="#Tuerschutzschalter"/>
+                            <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="VN3027-605_Schaltschranktuere_rechts54525">
+                                <base:isPartOf rdf:resource="#VN3027-605_Schaltschranktuere_rechts"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >20.5</base:Coordinate_Z>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Powercontrol rdf:resource="#Netzwerk"/>
+                    <base:isPartOf rdf:resource="#Flaschenpicker_komp_Nuernberg"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+                <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_5_in_NU_FLP_GRUNDGESTELL"/>
+                <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+                <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                <base:CableConnectionToExternal rdf:resource="#Greifer_Auf_Zu"/>
+                <base:Powercontrol rdf:resource="#Barcodeleser"/>
+                <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_3_in_NU_FLP_GRUNDGESTELL"/>
+                <base:CableConnectionToExternal rdf:resource="#AS-i-Netzteil"/>
+                <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+                <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_2_in_NU_FLP_GRUNDGESTELL"/>
+                <base:CableConnectionToExternal rdf:resource="#TM17"/>
+                <base:CableConnectionToExternal rdf:resource="#Sinamics_Smart_Line_Module"/>
+                <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_7_in_NU_FLP_GRUNDGESTELL"/>
+                <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >2445.53</base:Coordinate_Y>
+                <base:Powercontrol rdf:resource="#Endabschaltung_Z-Achse"/>
+                <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+                <base:CableConnectionToExternal rdf:resource="#Reserve"/>
+                <base:Powercontrol rdf:resource="#SMC_30"/>
+                <base:CableConnectionToExternal rdf:resource="#Lichtvorhang"/>
+                <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+                <base:consistsOf>
+                  <base:PhysicalComponent rdf:ID="Flaschenpicker_Nuernberg">
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >2282.1</base:Coordinate_Z>
+                    <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_6_in_NU_FLP_GRUNDGESTELL"/>
+                    <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+                    <base:Powercontrol rdf:resource="#AS-i-Netzteil"/>
+                    <base:CableConnectionToExternal rdf:resource="#AS-i-Netzteil"/>
+                    <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_7_in_NU_FLP_GRUNDGESTELL"/>
+                    <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="NU_FLP_GreifenEinheit">
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Rinne_Y">
+                            <base:isPartOf rdf:resource="#NU_FLP_GreifenEinheit"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="NU_FP_X_Achse">
+                            <base:isPartOf rdf:resource="#NU_FLP_GreifenEinheit"/>
+                            <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+                            <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                            <base:SchraubenConnectionToExternal>
+                              <base:Schrauben_Support rdf:ID="Schrauben_auf_ADAPTER_YZ_STANDARD_in_NU_FP_X-ACHSE"/>
+                            </base:SchraubenConnectionToExternal>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Mitnehmer_igus_Y_Standard">
+                                <base:isPartOf rdf:resource="#NU_FP_X_Achse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="ASI_Siemens">
+                                <base:isPartOf>
+                                  <base:PhysicalComponent rdf:ID="Z-Achse_kompl">
+                                    <base:isPartOf rdf:resource="#NU_FP_X_Achse"/>
+                                    <base:consistsOf>
+                                      <base:PhysicalComponent rdf:ID="VN3027-626_Schaltfahne">
+                                        <base:isPartOf rdf:resource="#Z-Achse_kompl"/>
+                                      </base:PhysicalComponent>
+                                    </base:consistsOf>
+                                    <base:consistsOf rdf:resource="#ASI_Siemens"/>
+                                    <base:consistsOf>
+                                      <base:PhysicalComponent rdf:ID="DGEA-25-YSR---_asm_2">
+                                        <base:isPartOf rdf:resource="#Z-Achse_kompl"/>
+                                      </base:PhysicalComponent>
+                                    </base:consistsOf>
+                                    <base:Coordinate_Y rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#float"
+                                    >1367.5</base:Coordinate_Y>
+                                    <base:Coordinate_Z rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#float"
+                                    >2282.1</base:Coordinate_Z>
+                                    <base:Coordinate_Y rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#float"
+                                    >1521.0</base:Coordinate_Y>
+                                    <base:consistsOf>
+                                      <base:PhysicalComponent rdf:ID="Greifer_Adapter_Platte_Standard">
+                                        <base:isPartOf rdf:resource="#Z-Achse_kompl"/>
+                                      </base:PhysicalComponent>
+                                    </base:consistsOf>
+                                    <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+                                    <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+                                    <base:Coordinate_X rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#float"
+                                    >374.505</base:Coordinate_X>
+                                    <base:consistsOf>
+                                      <base:PhysicalComponent rdf:ID="DGEA-25-YSR---_asm_1">
+                                        <base:isPartOf rdf:resource="#Z-Achse_kompl"/>
+                                      </base:PhysicalComponent>
+                                    </base:consistsOf>
+                                    <base:Powercontrol rdf:resource="#Endabschaltung_Z-Achse"/>
+                                    <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+                                    <base:consistsOf>
+                                      <base:PhysicalComponent rdf:ID="Greifereinheit_m_Flasche">
+                                        <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+                                        <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+                                        <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                                        <base:consistsOf>
+                                          <base:PhysicalComponent rdf:ID="Ver2_Greifer_SB32_Standard">
+                                            <base:Coordinate_Y
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                                            >1420.241</base:Coordinate_Y>
+                                            <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+                                            <base:Coordinate_Y
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                                            >1367.5</base:Coordinate_Y>
+                                            <base:Coordinate_Z
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                                            >1146.1</base:Coordinate_Z>
+                                            <base:Powercontrol rdf:resource="#Endabschaltung_Z-Achse"/>
+                                            <base:consistsOf>
+                                              <base:PhysicalComponent rdf:ID="Ver2_sb32-sv_Standard_Standard">
+                                                <base:isPartOf rdf:resource="#Ver2_Greifer_SB32_Standard"/>
+                                              </base:PhysicalComponent>
+                                            </base:consistsOf>
+                                            <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+                                            <base:isPartOf rdf:resource="#Greifereinheit_m_Flasche"/>
+                                            <base:Coordinate_X
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                                            >570.5046</base:Coordinate_X>
+                                            <base:Coordinate_X
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                                            >403.3757</base:Coordinate_X>
+                                            <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                                            <base:consistsOf>
+                                              <base:PhysicalComponent rdf:ID="B168-004_Standard_Standard">
+                                                <base:isPartOf rdf:resource="#Ver2_Greifer_SB32_Standard"/>
+                                              </base:PhysicalComponent>
+                                            </base:consistsOf>
+                                            <base:consistsOf>
+                                              <base:PhysicalComponent rdf:ID="GP608NC_AUF_mib_Standard">
+                                                <base:isPartOf rdf:resource="#Ver2_Greifer_SB32_Standard"/>
+                                              </base:PhysicalComponent>
+                                            </base:consistsOf>
+                                            <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+                                            <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+                                            <base:consistsOf>
+                                              <base:PhysicalComponent rdf:ID="Zwischenplatte_GP608_SB32_Standard">
+                                                <base:isPartOf rdf:resource="#Ver2_Greifer_SB32_Standard"/>
+                                              </base:PhysicalComponent>
+                                            </base:consistsOf>
+                                            <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                                            <base:Coordinate_Z
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                                            >1328.1</base:Coordinate_Z>
+                                            <base:consistsOf>
+                                              <base:PhysicalComponent rdf:ID="Festo_Steckverschraubung">
+                                                <base:isPartOf rdf:resource="#Ver2_Greifer_SB32_Standard"/>
+                                              </base:PhysicalComponent>
+                                            </base:consistsOf>
+                                          </base:PhysicalComponent>
+                                        </base:consistsOf>
+                                        <base:Usetools rdf:resource="#Schraubendreher"/>
+                                        <base:isPartOf rdf:resource="#Z-Achse_kompl"/>
+                                        <base:Powercontrol rdf:resource="#Endabschaltung_Y-Achse"/>
+                                        <base:SchraubenConnectionToExternal>
+                                          <base:Schrauben_Support rdf:ID="Schrauben_auf_GREIFER_ADAPTER_PLATTE_STANDAERD_in_Z-ACHSE_KOMPL_1"/>
+                                        </base:SchraubenConnectionToExternal>
+                                        <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                                        <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+                                        <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                                        <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+                                      </base:PhysicalComponent>
+                                    </base:consistsOf>
+                                    <base:Coordinate_X rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#float"
+                                    >570.5046</base:Coordinate_X>
+                                    <base:Coordinate_Z rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#float"
+                                    >1146.1</base:Coordinate_Z>
+                                    <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                                    <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                                    <base:consistsOf>
+                                      <base:PhysicalComponent rdf:ID="DGEA_25_500_ZR____A__Standard">
+                                        <base:SchraubenConnectionToExternal rdf:resource="#Schrauben_auf_ADAPTER_YZ_STANDARD_in_NU_FP_X-ACHSE"/>
+                                        <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                                        <base:isPartOf rdf:resource="#Z-Achse_kompl"/>
+                                      </base:PhysicalComponent>
+                                    </base:consistsOf>
+                                    <base:consistsOf>
+                                      <base:PhysicalComponent rdf:ID="Mitnemer_igus_z_bew_Standard">
+                                        <base:isPartOf rdf:resource="#Z-Achse_kompl"/>
+                                      </base:PhysicalComponent>
+                                    </base:consistsOf>
+                                    <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+                                  </base:PhysicalComponent>
+                                </base:isPartOf>
+                                <base:isPartOf rdf:resource="#NU_FP_X_Achse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="DGEA">
+                                <base:isPartOf rdf:resource="#NU_FP_X_Achse"/>
+                                <base:Coordinate_Z rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#float"
+                                >1733.1</base:Coordinate_Z>
+                                <base:Coordinate_X rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#float"
+                                >299.755</base:Coordinate_X>
+                                <base:Coordinate_X rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#float"
+                                >453.505</base:Coordinate_X>
+                                <base:Coordinate_Y rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#float"
+                                >1425.625</base:Coordinate_Y>
+                                <base:Coordinate_Y rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#float"
+                                >1348.0</base:Coordinate_Y>
+                                <base:consistsOf>
+                                  <base:PhysicalComponent rdf:ID="ZR_GHR____K__Standard">
+                                    <base:isPartOf rdf:resource="#DGEA"/>
+                                  </base:PhysicalComponent>
+                                </base:consistsOf>
+                                <base:consistsOf>
+                                  <base:PhysicalComponent rdf:ID="G____GW__Standard">
+                                    <base:isPartOf rdf:resource="#DGEA"/>
+                                  </base:PhysicalComponent>
+                                </base:consistsOf>
+                                <base:Coordinate_Z rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#float"
+                                >1545.1</base:Coordinate_Z>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Hub_Y_Achse_links">
+                                <base:isPartOf rdf:resource="#NU_FP_X_Achse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Hub_Z_Achse_links">
+                                <base:isPartOf rdf:resource="#NU_FP_X_Achse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Schlitten_und_Schaltfahne">
+                                <base:isPartOf rdf:resource="#NU_FP_X_Achse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Powercontrol rdf:resource="#Endabschaltung_Z-Achse"/>
+                            <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+                            <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                            <base:Powercontrol rdf:resource="#Endabschaltung_Y-Achse"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Mitnemer_igus_Z_Standard">
+                                <base:isPartOf rdf:resource="#NU_FP_X_Achse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Motorflansch">
+                                <base:isPartOf rdf:resource="#NU_FP_X_Achse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+                            <base:consistsOf rdf:resource="#Z-Achse_kompl"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Adapter_YZ_Standard">
+                                <base:isPartOf rdf:resource="#NU_FP_X_Achse"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Z-Achse"/>
+                        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-72.995</base:Coordinate_X>
+                        <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                        <base:Powercontrol rdf:resource="#Endabschaltung_Y-Achse"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >2282.1</base:Coordinate_Z>
+                        <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="IGUS_Hub_X_Achse_links">
+                            <base:isPartOf rdf:resource="#NU_FLP_GreifenEinheit"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                        <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+                        <base:Usetools rdf:resource="#Schraubendreher"/>
+                        <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >937.005</base:Coordinate_X>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Bremse_Standard">
+                            <base:isPartOf rdf:resource="#NU_FLP_GreifenEinheit"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Zwischenplatte_X_Achse">
+                            <base:isPartOf rdf:resource="#NU_FLP_GreifenEinheit"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1527.0</base:Coordinate_Y>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Ameco_Winkel_Y_Achse">
+                            <base:isPartOf rdf:resource="#NU_FLP_GreifenEinheit"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Powercontrol rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+                        <base:isPartOf rdf:resource="#Flaschenpicker_Nuernberg"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="IEF_pl115_510Hub_hinten250_5res">
+                            <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Grundkrper">
+                                <base:isPartOf rdf:resource="#IEF_pl115_510Hub_hinten250_5res"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Loslagerseite_PL">
+                                <base:isPartOf rdf:resource="#IEF_pl115_510Hub_hinten250_5res"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Festlagerseite">
+                                <base:isPartOf rdf:resource="#IEF_pl115_510Hub_hinten250_5res"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1271.5</base:Coordinate_Y>
+                            <base:SchraubenConnectionToExternal>
+                              <base:Schrauben_Support rdf:ID="Schrauben_auf_1_1_in_STAENDER_FESTO_STANDARD"/>
+                            </base:SchraubenConnectionToExternal>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1323.399</base:Coordinate_Y>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1566.1</base:Coordinate_Z>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1708.1</base:Coordinate_Z>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >96.005</base:Coordinate_X>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >935.3049</base:Coordinate_X>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Motoflansch">
+                                <base:isPartOf rdf:resource="#IEF_pl115_510Hub_hinten250_5res"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Usetools rdf:resource="#Kreuzschlitzschraubendreher"/>
+                            <base:isPartOf rdf:resource="#NU_FLP_GreifenEinheit"/>
+                            <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Profil_Spannelement">
+                                <base:isPartOf rdf:resource="#IEF_pl115_510Hub_hinten250_5res"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                        <base:CableConnectionToExternal rdf:resource="#Greifer_Auf_Zu"/>
+                        <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+                        <base:CableConnectionToExternal rdf:resource="#AS-i-Netzteil"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >989.6</base:Coordinate_Z>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-553.0</base:Coordinate_Y>
+                        <base:Powercontrol rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Staender_FESTO_Standard">
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >989.6</base:Coordinate_Z>
+                            <base:Usetools rdf:resource="#Kreuzschlitzschraubendreher"/>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >936.505</base:Coordinate_X>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Schalterleiste_neu">
+                                <base:isPartOf rdf:resource="#Staender_FESTO_Standard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1117.0</base:Coordinate_Y>
+                            <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1707.6</base:Coordinate_Z>
+                            <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="NONEC">
+                                <base:isPartOf rdf:resource="#Staender_FESTO_Standard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:isPartOf rdf:resource="#NU_FLP_GreifenEinheit"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="NONEB_1">
+                                <base:isPartOf rdf:resource="#Staender_FESTO_Standard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1417.0</base:Coordinate_Y>
+                            <base:SchraubenConnectionToExternal>
+                              <base:Schrauben_Support rdf:ID="Schrauben_auf_AMECO_WINKEL_Y_ACHSE_in_NU_FLP_GREIFEREINHEIT"/>
+                            </base:SchraubenConnectionToExternal>
+                            <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >162.105</base:Coordinate_X>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Powercontrol rdf:resource="#Endabschaltung_Z-Achse"/>
+                        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_X-Achse"/>
+                        <base:CableConnectionToExternal rdf:resource="#Greifer_Schwenkbacken"/>
+                        <base:Usetools rdf:resource="#Kreuzschlitzschraubendreher"/>
+                        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Y-Achse"/>
+                        <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+                        <base:SchraubenConnectionToExternal>
+                          <base:Schrauben_Support rdf:ID="Schrauben_auf_NONEC_in_STAENDER_FESO_STANDARD"/>
+                        </base:SchraubenConnectionToExternal>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_8_in_NU_FLP_GRUNDGESTELL"/>
+                    <base:Powercontrol rdf:resource="#Greifer_Auf_Zu"/>
+                    <base:isPartOf rdf:resource="#Flaschenpicker_komp_Nuernberg"/>
+                    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-0.29999</base:Coordinate_Z>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="NU_FLP_Lineareinheit">
+                        <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Lagerabdeckung">
+                            <base:isPartOf rdf:resource="#NU_FLP_Lineareinheit"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="mechanischer_Endlagenschalter-90Gard">
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >913.8093</base:Coordinate_Z>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >370.005</base:Coordinate_X>
+                            <base:isPartOf rdf:resource="#NU_FLP_Lineareinheit"/>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >117.111</base:Coordinate_Z>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >325.005</base:Coordinate_X>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Positionsschalter-90Gard">
+                                <base:isPartOf rdf:resource="#mechanischer_Endlagenschalter-90Gard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >-1655.0</base:Coordinate_Y>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >-1595.0</base:Coordinate_Y>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Halteplatte_mechanischer_Endschalter-90Gard">
+                                <base:isPartOf rdf:resource="#mechanischer_Endlagenschalter-90Gard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1986.665</base:Coordinate_Y>
+                        <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                        <base:Powercontrol rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+                        <base:Powercontrol rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+                        <base:CableConnectionToExternal rdf:resource="#Lichtvorhang"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >463.005</base:Coordinate_X>
+                        <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+                        <base:SchraubenConnectionToExternal rdf:resource="#Schrauben_auf_NONEC_in_STAENDER_FESO_STANDARD"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >420.98</base:Coordinate_Z>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Grundkrper_alt_light">
+                            <base:isPartOf rdf:resource="#NU_FLP_Lineareinheit"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                        <base:Powercontrol rdf:resource="#Endabschaltung_Y-Achse"/>
+                        <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                        <base:Powercontrol rdf:resource="#AS-i-Netzteil"/>
+                        <base:Usetools rdf:resource="#Kreuzschlitzschraubendreher"/>
+                        <base:Usetools rdf:resource="#Schraubendreher"/>
+                        <base:CableConnectionToExternal rdf:resource="#AS-i-Netzteil"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="mechanischer_Endlagenschalter90Gard">
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >913.8093</base:Coordinate_Z>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Positionsschalter90Gard">
+                                <base:isPartOf rdf:resource="#mechanischer_Endlagenschalter90Gard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1007.111</base:Coordinate_Z>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Halteplatte_mechanischer_Endschalter90Gard">
+                                <base:isPartOf rdf:resource="#mechanischer_Endlagenschalter90Gard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1623.999</base:Coordinate_Y>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >325.005</base:Coordinate_X>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1563.999</base:Coordinate_Y>
+                            <base:isPartOf rdf:resource="#NU_FLP_Lineareinheit"/>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >370.005</base:Coordinate_X>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:isPartOf rdf:resource="#Flaschenpicker_Nuernberg"/>
+                        <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                        <base:Powercontrol rdf:resource="#Endabschaltung_X-Achse"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="AC-Motor_1FK7042-5AF71-1EG2_Steckerabgang">
+                            <base:isPartOf rdf:resource="#NU_FLP_Lineareinheit"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >112.005</base:Coordinate_X>
+                        <base:Powercontrol rdf:resource="#Endabschaltung_Z-Achse"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="ASi-Knoten">
+                            <base:isPartOf rdf:resource="#NU_FLP_Lineareinheit"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >998.3</base:Coordinate_Z>
+                        <base:CableConnectionToExternal rdf:resource="#Simotion_Base_Control"/>
+                        <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1936.665</base:Coordinate_Y>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Zwischenflansch_Modul">
+                            <base:isPartOf rdf:resource="#NU_FLP_Lineareinheit"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >1936.665</base:Coordinate_Y>
+                    <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                    <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >992.005</base:Coordinate_X>
+                    <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_3_in_NU_FLP_GRUNDGESTELL"/>
+                    <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                    <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_4_in_NU_FLP_GRUNDGESTELL"/>
+                    <base:Usetools>
+                      <base:PhysicalTool rdf:ID="Steckschlüssel"/>
+                    </base:Usetools>
+                    <base:CableConnectionToExternal rdf:resource="#Lichtvorhang"/>
+                    <base:consistsOf>
+                      <base:PhysicalComponent rdf:ID="NU_FLP_Grundgestelle">
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Rinne">
+                            <base:isPartOf rdf:resource="#NU_FLP_Grundgestelle"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >992.005</base:Coordinate_X>
+                        <base:Powercontrol rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+                        <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+                        <base:CableConnectionToExternal rdf:resource="#Lichtvorhang"/>
+                        <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                        <base:CableConnectionToExternal rdf:resource="#Barcodeleser"/>
+                        <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_4_in_NU_FLP_GRUNDGESTELL"/>
+                        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_X-Achse"/>
+                        <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+                        <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_1_in_NU_FLP_GRUNDGESTELL"/>
+                        <base:Usetools rdf:resource="#Steckschlüssel"/>
+                        <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Kippsicherung_Standard">
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >-1830.0</base:Coordinate_Y>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="N_934_M_16">
+                                <base:isPartOf rdf:resource="#Kippsicherung_Standard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:isPartOf rdf:resource="#NU_FLP_Grundgestelle"/>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >992.005</base:Coordinate_X>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Rohr3_Standard">
+                                <base:isPartOf rdf:resource="#Kippsicherung_Standard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Rohr2_Standard">
+                                <base:isPartOf rdf:resource="#Kippsicherung_Standard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:SchraubenConnectionToExternal>
+                              <base:Schrauben_Support rdf:ID="Einstellfu_S____S_x43_Standard"/>
+                            </base:SchraubenConnectionToExternal>
+                            <base:Usetools rdf:resource="#Schraubendreher"/>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Rohr1_Standard">
+                                <base:isPartOf rdf:resource="#Kippsicherung_Standard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >339.7</base:Coordinate_Z>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Stellfuss_D40_M16x81_Standard_Kippsicherung">
+                                <base:isPartOf rdf:resource="#Kippsicherung_Standard"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >92.005</base:Coordinate_X>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >-1866.0</base:Coordinate_Y>
+                            <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                            <base:SchraubenConnectionToExternal rdf:resource="#Einstellfu_S____S_x40_Gewinde_M16x81_Standard"/>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >-0.29999</base:Coordinate_Z>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:Powercontrol rdf:resource="#Simotion_Base_Control"/>
+                        <base:Usetools rdf:resource="#Kreuzschlitzschraubendreher"/>
+                        <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_5_in_NU_FLP_GRUNDGESTELL"/>
+                        <base:Powercontrol rdf:resource="#Lichtvorhang"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-0.29999</base:Coordinate_Z>
+                        <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_3_in_NU_FLP_GRUNDGESTELL"/>
+                        <base:Powercontrol rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+                        <base:SchraubenConnectionToExternal rdf:resource="#Schrauben_auf_NONEC_in_STAENDER_FESO_STANDARD"/>
+                        <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                        <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1047.638</base:Coordinate_Z>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >1835.0</base:Coordinate_Y>
+                        <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_7_in_NU_FLP_GRUNDGESTELL"/>
+                        <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_8_in_NU_FLP_GRUNDGESTELL"/>
+                        <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+                        <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_2_in_NU_FLP_GRUNDGESTELL"/>
+                        <base:Usetools rdf:resource="#Schraubendreher"/>
+                        <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >38.005</base:Coordinate_X>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Kippsicherung_Standard-kurz">
+                            <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1770.0</base:Coordinate_Y>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Rohr2_Standard-kurz">
+                                <base:isPartOf rdf:resource="#Kippsicherung_Standard-kurz"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:SchraubenConnectionToExternal rdf:resource="#Einstellfu_S____S_x43_Standard"/>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >-0.29999</base:Coordinate_Z>
+                            <base:Usetools rdf:resource="#Schraubendreher"/>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >788.005</base:Coordinate_X>
+                            <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >1805.0</base:Coordinate_Y>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Stellfuss_D40_M16x81_Standard_Kippsicherung_kurz">
+                                <base:isPartOf rdf:resource="#Kippsicherung_Standard-kurz"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:SchraubenConnectionToExternal rdf:resource="#Einstellfu_S____S_x40_Gewinde_M16x81_Standard"/>
+                            <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >92.005</base:Coordinate_X>
+                            <base:isPartOf rdf:resource="#NU_FLP_Grundgestelle"/>
+                            <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                            >339.7</base:Coordinate_Z>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Rohr3_Standard-kurz">
+                                <base:isPartOf rdf:resource="#Kippsicherung_Standard-kurz"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="N_934_M_16_kurz">
+                                <base:isPartOf rdf:resource="#Kippsicherung_Standard-kurz"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                            <base:consistsOf>
+                              <base:PhysicalComponent rdf:ID="Rohr1_Standard-kurz">
+                                <base:isPartOf rdf:resource="#Kippsicherung_Standard-kurz"/>
+                              </base:PhysicalComponent>
+                            </base:consistsOf>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Nivellierung_Type_Standard">
+                            <base:isPartOf rdf:resource="#NU_FLP_Grundgestelle"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Y-Achse"/>
+                        <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_6_in_NU_FLP_GRUNDGESTELL"/>
+                        <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >-1955.0</base:Coordinate_Y>
+                        <base:CableConnectionToExternal rdf:resource="#Endabschaltung_Z-Achse"/>
+                        <base:Usetools rdf:resource="#Stiftschlüssel"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Grundgestell_Standard">
+                            <base:isPartOf rdf:resource="#NU_FLP_Grundgestelle"/>
+                            <base:Powercontrol rdf:resource="#Simotion_Base_Control"/>
+                            <base:SchraubenConnectionToExternal>
+                              <base:Schrauben_Support rdf:ID="_X40_GEWINDE_M16X81_STANDARD_1in_TELLFUSS_D40_M16X81_STANDARD1-10"/>
+                            </base:SchraubenConnectionToExternal>
+                            <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                            <base:Usetools rdf:resource="#Schraubendreher"/>
+                            <base:SchraubenConnectionToExternal rdf:resource="#Einstellfu_S____S_x43_Standard"/>
+                            <base:SchraubenConnectionToExternal rdf:resource="#Einstellfu_S____S_x40_Gewinde_M16x81_Standard"/>
+                            <base:CableConnectionToExternal rdf:resource="#Simotion_Base_Control"/>
+                            <base:CableConnectionToExternal rdf:resource="#Stromversorgung"/>
+                            <base:CableConnectionToExternal rdf:resource="#Station_Abfrage"/>
+                            <base:Usetools rdf:resource="#Schraubenschlüssel"/>
+                            <base:Powercontrol rdf:resource="#Station_Abfrage"/>
+                            <base:Powercontrol rdf:resource="#Stationenschalter"/>
+                            <base:CableConnectionToExternal rdf:resource="#Stationenschalter"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                        <base:isPartOf rdf:resource="#Flaschenpicker_Nuernberg"/>
+                        <base:consistsOf>
+                          <base:PhysicalComponent rdf:ID="Stellfuss_D40_M16x81_Standard">
+                            <base:isPartOf rdf:resource="#NU_FLP_Grundgestelle"/>
+                          </base:PhysicalComponent>
+                        </base:consistsOf>
+                      </base:PhysicalComponent>
+                    </base:consistsOf>
+                    <base:Powercontrol rdf:resource="#Endabschaltung_Y-Achse"/>
+                    <base:Usetools rdf:resource="#Stiftschlüssel"/>
+                    <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+                    <base:Powercontrol rdf:resource="#Endabschaltung_Z-Achse"/>
+                    <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_5_in_NU_FLP_GRUNDGESTELL"/>
+                    <base:Powercontrol rdf:resource="#Barcodeleser"/>
+                    <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-72.995</base:Coordinate_X>
+                    <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_1_in_NU_FLP_GRUNDGESTELL"/>
+                    <base:Coordinate_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                    >-1986.665</base:Coordinate_Y>
+                    <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_2_in_NU_FLP_GRUNDGESTELL"/>
+                  </base:PhysicalComponent>
+                </base:consistsOf>
+                <base:Powercontrol rdf:resource="#Sinamics_Smart_Line_Module"/>
+                <base:Powercontrol rdf:resource="#Stromversorgung"/>
+                <base:Powercontrol rdf:resource="#Signalsaeule"/>
+                <base:Powercontrol rdf:resource="#USV_Modul_Akkumodul"/>
+                <base:Powercontrol rdf:resource="#Lichtvorhang"/>
+                <base:CableConnectionToExternal rdf:resource="#Not-Aus"/>
+                <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_6_in_NU_FLP_GRUNDGESTELL"/>
+                <base:CableConnectionToExternal rdf:resource="#Signalsaeule"/>
+                <base:Usetools rdf:resource="#Stiftschlüssel"/>
+                <base:CableConnectionToExternal rdf:resource="#SMC_30"/>
+                <base:Powercontrol rdf:resource="#Sinamis_Double_Moto_Module_Z-Achse"/>
+                <base:CableConnectionToExternal rdf:resource="#Greifer_Schwenkbacken"/>
+                <base:Powercontrol rdf:resource="#TM17"/>
+                <base:Usetools rdf:resource="#Steckschlüssel"/>
+                <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_8_in_NU_FLP_GRUNDGESTELL"/>
+                <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >2282.1</base:Coordinate_Z>
+                <base:SchraubenConnectionToExternal rdf:resource="#N_7991_M_4_X_16_1_in_NU_FLP_GRUNDGESTELL"/>
+                <base:Powercontrol rdf:resource="#Not-Aus"/>
+                <base:Coordinate_X rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >-72.995</base:Coordinate_X>
+                <base:CableConnectionToExternal rdf:resource="#Simotion_Base_Control"/>
+                <base:Powercontrol rdf:resource="#Reserve"/>
+                <base:CableConnectionToExternal rdf:resource="#Endabschaltung_X-Achse"/>
+                <base:Powercontrol rdf:resource="#Tuerschutzschalter"/>
+              </base:PhysicalComponent>
+            </base:consistsOf>
+          </base:PhysicalComponent>
+        </base:isPartOf>
+        <base:SchraubenConnectionToExternal rdf:resource="#Schrauben_auf_529352_HPV_14_40_A_001_1_in_529352_HPV_14_40_A_1"/>
+        <base:Powercontrol rdf:resource="#Greifer_Schwenkbacken"/>
+        <base:CableConnectionToExternal rdf:resource="#Simotion_Base_Control"/>
+        <base:Powercontrol rdf:resource="#Netzwerk"/>
+        <base:Usetools rdf:resource="#Steckschlüssel"/>
+        <base:CableConnectionToExternal rdf:resource="#Sinamis_Double_Moto_Module_X-Achse_Y-Achse"/>
+        <base:consistsOf>
+          <base:PhysicalComponent rdf:ID="VN3027-148_Winkel">
+            <base:isPartOf rdf:resource="#Bandlayout_Nuernberg"/>
+          </base:PhysicalComponent>
+        </base:consistsOf>
+      </base:PhysicalComponent>
+    </base:isPartOf>
+    <base:CableConnectionToExternal rdf:resource="#Netzwerk"/>
+    <base:Coordinate_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >2031.5</base:Coordinate_Z>
+  </base:PhysicalComponent>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.1, Build 536)  http://protege.stanford.edu -->
