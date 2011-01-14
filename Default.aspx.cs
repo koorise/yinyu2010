@@ -46,6 +46,19 @@ public partial class _Default : System.Web.UI.Page
                 CoordnateCheck("Coordinate_Y", edge);
                 CoordnateCheck("Coordinate_Z", edge);
             }
+            string isPartOfstr = IsPartOf(str);
+            if(isPartOfstr==null)
+            {
+                isPartOfstr = "";
+            }
+            else
+            {
+                isPartOfstr = isPartOfstr.Split('#')[1].ToString();
+            }
+            //OLEDB.Execute(
+            //    "insert into owl_searchindex (ID,Coordinate_X1,Coordinate_X2,Coordinate_Y1,Coordinate_Y2,Coordinate_Z1,Coordinate_Z2,isPartOf)values('" +
+            //    str.Split('#')[1].ToString() + "'," + Coordinate_X1 + "," + Coordinate_X2 + "," + Coordinate_Y1 + "," +
+            //    Coordinate_Y2 + "," + Coordinate_Z1 + "," + Coordinate_Z2 + ",'" + isPartOfstr + "')");
             ComponentID componentId = new ComponentID { ID = str.Split('#')[1].ToString(), Coordinate_X1 = Coordinate_X1, Coordinate_X2 = Coordinate_X2, Coordinate_Y1 = Coordinate_Y1, Coordinate_Y2 = Coordinate_Y2, Coordinate_Z1 = Coordinate_Z1, Coordinate_Z2 = Coordinate_Z2 };
             componentIds.Add(componentId);
             Coordinate_X1 = 0;
@@ -63,7 +76,7 @@ public partial class _Default : System.Web.UI.Page
 
     [DirectMethod]
     protected void Search_Click(object s,DirectEventArgs e)
-    {
+    { 
         GetTargetModule(NodeId(TextField1.Text)); 
         this.Store0.DataSource = GetTargetModuleAregs(TargetModule);
         this.Store0.DataBind();
@@ -81,6 +94,71 @@ public partial class _Default : System.Web.UI.Page
         this.Store6.DataBind();
     }
 
+    protected void Removing(object s,DirectEventArgs e)
+    {
+        string axis = e.ExtraParams["axis"].ToString();
+        Window1.Title = "目标模块：" + TextField1.Text + "，从" + axis + "轴方向拆卸";
+
+        GetTargetModule(NodeId(TextField1.Text)); 
+        switch (axis)
+        {
+            case "-X":
+                StoreCom.DataSource = GetMaskOrder(TargetModule.Split('#')[1], "Coordinate_X1");
+                StoreCom.DataBind();
+                break;
+            case "X":
+                StoreCom.DataSource = GetMaskOrder(TargetModule.Split('#')[1], "Coordinate_X2");
+                StoreCom.DataBind();
+                break;
+            case "-Y":
+                StoreCom.DataSource = GetMaskOrder(TargetModule.Split('#')[1], "Coordinate_Y1");
+                StoreCom.DataBind();
+                break;
+            case "Y":
+                StoreCom.DataSource = GetMaskOrder(TargetModule.Split('#')[1], "Coordinate_Y2");
+                StoreCom.DataBind();
+                break;
+            case "-Z":
+                StoreCom.DataSource = GetMaskOrder(TargetModule.Split('#')[1], "Coordinate_Z1");
+                StoreCom.DataBind();
+                break;
+            case "Z":
+                StoreCom.DataSource = GetMaskOrder(TargetModule.Split('#')[1], "Coordinate_Z2");
+                StoreCom.DataBind();
+                break;
+                
+        }
+        Window1.Show();
+        
+    }
+    protected void StoreConnections_OnRefreshData(object s, StoreRefreshDataEventArgs e)
+    {
+        string ComID = e.Parameters["ID"].ToString();
+        StoreConnections.DataSource = GetConnections(ComID, "CableConnectionToExternal");
+        StoreConnections.DataBind();
+    }
+    protected  List<Connections> GetConnections(string com,string TypeName)
+    {
+        graph = Parser.ParseOwl(Server.MapPath(OwlPath));
+        IOwlNode owlNode = (IOwlNode)graph.Nodes["http://www.owl-ontologies.com/Ontology1286184178.owl#"+com];
+        OwlEdgeCollection owlEdgeCollection = (OwlEdgeCollection)owlNode.ChildEdges;
+        List<Connections> list = new List<Connections>();
+        foreach (OwlEdge edge in owlEdgeCollection)
+        {
+            if (edge.ID == TypeName)
+            {
+                IOwlNode o = (IOwlNode) graph.Nodes[edge.ChildNode.ID];
+                OwlEdgeCollection oc = (OwlEdgeCollection) o.ChildEdges;
+                foreach (OwlEdge _o in oc)
+                {
+                    Connections connections = new Connections{ComID = com,ConnectionsID = _o.ChildNode.ID,TypeName = TypeName,TypeNameChild = _o.ID};
+                    list.Add(connections);
+                }
+            }
+        }
+        return list;
+
+    }
     #region CoordnateCheck(string coordinate,OwlEdge owlEdge) 取出模块坐标
     /// <summary>
     /// 取出模块坐标
@@ -401,7 +479,19 @@ public partial class _Default : System.Web.UI.Page
     }
     #endregion
 }
+#region Connections类
+/// <summary>
+/// Connections类
+/// </summary>
+public class Connections
+{
 
+    public String ComID { get; set; }
+    public String TypeName { get; set; }
+    public String TypeNameChild { get; set; }
+    public String ConnectionsID { get; set; }
+}
+#endregion
 #region PhysicalComponent类
 /// <summary>
 /// PhysicalComponent类
@@ -443,19 +533,19 @@ public class CoordinateCompare:IComparer<ComponentID>
                 result = -a.Coordinate_X1.CompareTo(b.Coordinate_X1);
                 break;
             case CompareType.Coordinate_X2:
-                result = -a.Coordinate_X2.CompareTo(b.Coordinate_X2);
+                result = a.Coordinate_X2.CompareTo(b.Coordinate_X2);
                 break;
             case CompareType.Coordinate_Y1:
                 result = -a.Coordinate_Y1.CompareTo(b.Coordinate_Y1);
                 break;
             case CompareType.Coordinate_Y2:
-                result = -a.Coordinate_Y2.CompareTo(b.Coordinate_Y2);
+                result = a.Coordinate_Y2.CompareTo(b.Coordinate_Y2);
                 break;
             case CompareType.Coordinate_Z1:
                 result = -a.Coordinate_Z1.CompareTo(b.Coordinate_Z1);
                 break;
             case CompareType.Coordinate_Z2:
-                result = -a.Coordinate_Z2.CompareTo(b.Coordinate_Z2);
+                result = a.Coordinate_Z2.CompareTo(b.Coordinate_Z2);
                 break;
 
         }
