@@ -131,12 +131,14 @@ public partial class _Default : System.Web.UI.Page
         Window1.Show();
         
     }
+
     protected void StoreConnections_OnRefreshData(object s, StoreRefreshDataEventArgs e)
     {
         string ComID = e.Parameters["ID"].ToString();
         StoreConnections.DataSource = GetConnections(ComID, "CableConnectionToExternal");
         StoreConnections.DataBind();
     }
+
     protected  List<Connections> GetConnections(string com,string TypeName)
     {
         graph = Parser.ParseOwl(Server.MapPath(OwlPath));
@@ -159,6 +161,7 @@ public partial class _Default : System.Web.UI.Page
         return list;
 
     }
+
     #region CoordnateCheck(string coordinate,OwlEdge owlEdge) 取出模块坐标
     /// <summary>
     /// 取出模块坐标
